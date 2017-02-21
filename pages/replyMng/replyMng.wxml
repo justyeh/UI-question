@@ -1,0 +1,64 @@
+<view class="page">
+
+  <!--loading-->
+  <view class="loading" wx:if="{{isLoading}}">loading</view>
+
+  <!--list-->
+  <view class="list" wx:if="{{hasAnswer}}">
+      <block wx:for="{{questionList}}" wx:for-item="data">
+        <view class="block">
+          <view class="header">
+            <image mode="widthFix" src="../../images/icon-q.png"></image>
+            <text class="type">提问</text>
+            <text class="time">2015-01-01</text>
+          </view>
+          <view class="{{data.showMore ? 'main more' :'main' }}">
+            <view class="text">{{data.title}}{{data.title}}{{data.title}}</view>
+            <view class="drop" data-index="{{index}}" bindtap="showMore">
+              <image class="arrow" mode="widthFix" src="../../images/icon-more.png"></image>
+            </view>
+          </view>
+        </view>
+        <view class="block answer">
+          <view class="header">
+            <image mode="widthFix" src="../../images/icon-a.png"></image>
+            <view class="info">
+              <view class="top">
+                <text class="tea">张老师</text>
+                <text>回复</text>
+              </view>
+              <view class="bottom">
+                <text>百度高级UED设计师</text>
+                <text class="time">2015-01-01</text>
+              </view> 
+            </view>
+          </view>
+          <view class="{{data.showMore ? 'main more' :'main' }}">
+            <view class="text">{{data.title}}{{data.title}}{{data.title}}</view>
+            <view class="drop" data-index="{{index}}" bindtap="showMore">
+              <image class="arrow" mode="widthFix" src="../../images/icon-more.png"></image>
+            </view>
+          </view>
+        </view>
+      </block>
+  </view>  
+
+  <view class="quiz" wx:if="{{ !isLoading&hasAnswer }}">
+    <navigator open-type="navigate" url="../question/question">追问</navigator>
+  </view>
+
+  <!-- <block wx:if="{{!isLoading&!hasAnswer}}">
+     	<view class="answer-empty">
+     		<image mode="widthFix" src="../../images/icon-clock.png"></image>
+        <text>您的问题还正在等待中</text>
+     	</view>
+   </block>-->
+
+   <block>
+     	<view class="answer-empty">
+     		<image mode="widthFix" src="../../images/icon-clock.png"></image>
+        <text>您的问题还正在等待中</text>
+     	</view>
+   </block>
+
+</view>

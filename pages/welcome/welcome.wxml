@@ -1,0 +1,9 @@
+<!--pages/welcome/welcome.wxml-->
+<view class="page">
+    <text>这里有最资深的UI设计师为你解疑</text>
+    <view class="tea-list">
+        <block wx:for="{{teaList}}">
+            <image mode="aspectFill" src="{{item}}"></image>
+        </block>
+    </view>
+</view>

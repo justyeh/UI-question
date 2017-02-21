@@ -1,0 +1,41 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/quiz/quiz",
+    "pages/replyMng/replyMng",
+    
+    "pages/my/my",
+    "pages/question/question",
+    "pages/welcome/welcome"
+  ],
+  "tabBar": {
+    "color":"#afb2b9",
+    "backgroundColor":"#fff",
+    "selectedColor":"#18b7ee",
+    "borderStyle":"white",
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "首页",
+      "iconPath":"images/icon-home.png",
+      "selectedIconPath":"images/icon-home-act.png"
+    }, {
+      "pagePath": "pages/quiz/quiz",
+      "text": "提问",
+      "iconPath":"images/icon-quiz.png",
+      "selectedIconPath":"images/icon-quiz-act.png"
+    }, {
+      "pagePath": "pages/my/my",
+      "text": "我的",
+      "iconPath":"images/icon-my.png",
+      "selectedIconPath":"images/icon-my-act.png"
+    }]
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#18b7ee",
+    "navigationBarTitleText": "UI快问",
+    "navigationBarTextStyle":"white"
+  }
+} 
+
+

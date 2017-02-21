@@ -1,0 +1,26 @@
+<view  class="page">
+
+	<view class="page-title">请在此输入您的问题：</view>
+
+	<form bindsubmit="handleFormSubmit">
+		<view class="section">
+			<textarea bindinput="handleTextareaInput" auto-focus="true" maxlength="200" placeholder="please input here" />
+		</view>
+
+		<view class="section section_gap">
+			<image bindtap="uploadFile" mode="widthFix" src="../../images/icon-camera.png"></image>
+			<text>{{restNum}}字</text>
+		</view>
+
+		<view wx:if="{{imgs.length > 0}}" class="img-list">
+			<block wx:for="{{imgs}}" wx:for-item="img">
+				<image mode="aspectFill" src="{{img}}"></image>
+			</block>
+		</view>
+
+		<view class="btn-area">
+			<button type="default" formType="submit">提交</button>
+		</view>
+
+	</form>
+</view>

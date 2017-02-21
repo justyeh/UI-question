@@ -1,0 +1,39 @@
+
+.block{
+  background: #fff;
+  padding: 0 30rpx;
+  margin-bottom: 30rpx;
+}
+.block .content{
+  color: #000;
+  font-size: 34rpx;
+  line-height: 50rpx;
+  padding: 30rpx 0;
+  border-bottom: solid 1px #e7ecee;
+}
+.block .info{
+  height: 70rpx;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+
+.block .info image{
+  width: 16px;
+}
+
+.block .info text{
+  color: #999;
+  font-size: 26rpx;
+  padding-left: 20rpx;
+}
+.block .msg{
+  position: absolute;
+  left:30rpx;
+  top: 4rpx;
+  bottom: 0;
+  margin: auto;
+}
+
+

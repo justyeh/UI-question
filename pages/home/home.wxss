@@ -1,0 +1,78 @@
+/* pages/index/index.wxss */
+page{
+    display: block;  
+    min-height: 100%;
+    background-color: #f3f3f3;
+}
+.banner{
+    height: 615rpx;
+    background: #18b7ee;
+    text-align: center;
+}
+.banner image{
+    width: 310rpx;
+    margin: 130rpx 0;
+}
+.banner navigator{
+    background: #ffffff;
+    color: #18b7ee;
+    display: block;
+    width: 690rpx;
+    height: 90rpx;
+    line-height: 90rpx;
+    margin: 0 auto;
+    border-radius: 45px;
+}
+.main{
+    display: flex;
+    background: #ffffff;
+    padding: 35rpx;
+    justify-content: space-between;
+}
+.main navigator{
+    width: 330rpx;
+    height: 160rpx;
+    text-align: center;
+    border-radius: 20rpx;
+    background: #f7f9f9;
+}
+.main navigator .num{
+    color: #18b7ee;
+    font-size: 48rpx;
+    line-height: 48rpx;
+    display: block;
+    padding: 30rpx 0 15rpx 0;
+}
+.main navigator .text{
+    color: #666;
+    font-size: 13px;
+    position: relative;
+    line-height: 13px;
+}
+.main navigator.act .text:after{
+    content: '';
+    position: absolute;
+    right: -10px;
+    top:0;
+    bottom: 2px;
+    margin: auto;
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    background: #f35000;
+}
+.main-empty{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 90rpx 0;
+}
+.main-empty image{
+    width: 45rpx;
+    margin-right: 20rpx;
+}
+.main-empty text{
+    color: #cacccf;
+    font-size: 14px;
+    font-weight: 500;
+}

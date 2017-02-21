@@ -1,0 +1,10 @@
+/**app.wxss**/
+page{
+  min-height: 100%;
+  background-color: #f6f7fe;
+}
+.loading{
+  display: block;
+  text-align: center;
+  padding-top:50%;
+}

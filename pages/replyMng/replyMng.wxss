@@ -1,0 +1,139 @@
+.block{
+  background: #fff;
+  padding: 0 30rpx;
+  margin-bottom: 30rpx;
+}
+.list .block:last-child{
+  margin-bottom: 5rpx;
+}
+.block .header{
+  display: flex;
+  align-items: center;
+  height: 110rpx;
+  border-bottom: solid 1px #e7ecee;
+}
+.block .header image{
+  width: 50rpx;
+}
+.block .header text.type{
+  padding: 0 20rpx;
+  font-size: 14px;
+  color: #666;
+}
+.block .header text.time{
+  color: #999;
+  height: 16px;
+  font-size: 14px;
+  line-height: 16px;
+  padding-left: 20rpx;
+  border-left: solid 1px #e7ecee;
+}
+.block .main{
+  padding: 10px 0 0 0;
+  position: relative;
+  max-height: 130px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.block .main .text{
+  font-size: 16px;
+  line-height: 30px;
+  overflow:hidden;
+  padding-bottom: 30px;
+}
+.block .main .drop{
+  position: absolute; 
+  background: #fff;
+  top: 100px;
+  height: 30px;
+  width: 100%;
+  display: block;
+  align-items: center;
+  text-align: center;
+}
+.block .main .arrow{
+  width: 12px;
+}
+
+/**css for answer**/
+.answer .header{
+  height: 140rpx;
+}
+.answer .header image{
+  width: 85rpx;
+  margin-right: 30rpx;
+}
+.answer .header .info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+ 
+}
+.answer .info .top text{
+   font-size: 32rpx;
+   color: #9eadb7;
+   display: inline-block;
+}
+.answer .info .top text.tea{
+   color: #18b7ee;
+   display: inline-block;
+   padding-right: 15rpx;
+}
+.answer .info .bottom text{
+   font-size: 26rpx;
+   color: #9eadb7;
+   display: inline-block;
+}
+.answer .info .bottom text.time{
+   font-size: 26rpx;
+   display: inline-block;
+   border-left: solid 1px #e7ecee;
+   margin-left: 15rpx;
+   padding-left: 15rpx;
+}
+
+/**no more icon**/
+.block .main.more,
+.block .main.more .text{
+  max-height: none;
+}
+.block .main.more .drop{
+  display: none;
+}
+
+/**quiz button**/
+.quiz{
+  padding: 15rpx 0; 
+  background: #fff;
+  display: flex;
+  align-items: center;
+}
+.quiz navigator{
+  display: block;
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 360rpx;
+  padding: 18rpx;
+  text-align: center;
+  color: #18b7ee;
+  border: solid 2px #18b7ee;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/**no answer**/
+.answer-empty{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80rpx 0;
+}
+.answer-empty image{
+    width: 45rpx;
+    margin-right: 20rpx;
+}
+.answer-empty text{
+    color: #47678e;
+    font-size: 30rpx;
+    font-weight: 500;
+}
